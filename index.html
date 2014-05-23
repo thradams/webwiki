@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <div id="content">content</div>
+
+    <div id="source" style="border:solid 2px; border-color:gray; position:fixed;left:0px;bottom:0px;width:100%;background-color:gray">
+        <textarea id="wikitext" style="font-size:large; font-family:'Courier New'; background-color:RGB(255,255,204); width:100%;height:300px;" onkeydown="OnWikiChanged()"></textarea>
+        <input type="button" value="Preview" style="width:80px" onclick="OnPreview()" />
+        <input type="button" id="ShowHide" style="width:80px" value="See" onclick="OnShowHide()" />
+        <input type="button" id="ShowHideResult" style="width:80px" value="Show" onclick="OnShowHideResult()" />
+        
+        <input type="button" style="margin-left:40px;width:80px" value="Publish" onclick="OnPublish()" />
+
+        <input type="file" id="myfile" style="margin-left:40px;"  onchange="OnFileSelected()" />
+
+        <textarea id="htmlresult" style="display:none;background-color:rgb(182, 255, 0); width:100%;height:300px;">        </textarea>
+    </div>
+
+</body>
+</html>
